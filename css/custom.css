@@ -1,0 +1,190 @@
+/*General*/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+h1, h3, .logo, .text-logo, #etsy-btn {
+    font-family: 'Spirax', cursive;
+}
+body {
+    background: #1ac5e0 url('../images/textile.jpg') no-repeat center center / cover fixed;
+    position: relative;
+}
+hr.hr-light {
+  width: 70%;
+  margin: auto;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto #FFF;
+}
+.jumbotron {
+    background-color: rgba(30,30,30,.65);
+}
+
+/*Nav*/
+#navbar a.navbar-brand .logo48 {
+    pointer-events: none;
+}
+.navbar {
+  transition: background-color 200ms linear;
+}
+.navbar.fixed-top.scrolled {
+  background-color: #17a2b8 !important;
+  transition: background-color 200ms linear;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+/*Home*/
+#logo {
+    display: inline-flex;
+    align-self: center;
+    width: 100%;
+    margin-top: 5rem;
+}
+#logo svg {
+    margin-left: auto;
+}
+#logo h1 {
+    line-height: 1.25;
+    margin-left: .25em;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+#logo + p {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: -2rem;
+}
+.carousel-inner {
+    width: 100%;
+    max-height: 20rem;
+    min-height: 20rem;
+}
+#welcome {
+    font-size: 110%
+}
+
+/*About*/
+#about img {
+    float: right;
+    max-height: 20rem;
+    margin-left: 2rem;
+}
+#about p {
+    text-align: justify;
+}
+
+/*Contact*/
+.card {
+    width: 20rem;
+    min-height: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+.card-img-top {
+    background: #FFF;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+.card-body p {
+    margin-top: auto;
+}
+.card-body a {
+    margin-bottom: 0;
+}
+
+/*Contact Buttons*/
+#facebook-btn {
+    width: 10rem;
+    height: 2rem;
+}
+#email-btn{
+    width: 10rem;
+    height: 3rem;
+    background: #138496 url("../images/letter.png") no-repeat center center / cover;
+}
+#etsy-btn-container {
+    background: #000;
+    border-radius: .3rem;
+}
+#etsy-btn {
+    width:17.5rem;
+    height:4.5rem;
+    font-family:'Spirax', cursive;
+    padding: .75rem !important;
+    background: #138496 url("../images/etsy.jpg") no-repeat center center / cover;
+}
+#etsy-btn {
+    display: inline-flex;
+}
+#etsy-btn svg {
+    margin-left: auto;
+}
+#etsy-btn h3 {
+    margin-right: auto;
+    line-height: 1.65;
+    padding-left: .25rem;
+}
+#email-btn:hover, #etsy-btn:hover {
+  opacity: .85;
+}
+.btn-outline-light:hover {
+    color: #f8f9fa;
+    background-color: rgba(1,1,1,.1);
+    border-color: rgba(1,1,1,.1);
+}
+
+/*Mobile Fixes*/
+@media only screen and (max-width: 480px), screen and (max-height: 480px) {
+    body {
+        background: #138496;
+        background-color: #17a2b8;
+        background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Ehoundstooth%3C/title%3E%3Cg fill='%23138496' fill-opacity='.25' fill-rule='evenodd'%3E%3Cpath d='M0 18h6l6-6v6h6l-6 6H0M24 18v6h-6M24 0l-6 6h-6l6-6M12 0v6L0 18v-6l6-6H0V0'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(85deg, rgba(26,197,224,1) 0%, rgba(26,197,224,1) 15%, rgba(21,139,158,1) 35%, rgba(26,197,224,1) 45%, rgba(21,139,158,1) 70%, rgba(26,197,224,1) 100%) fixed;
+    }
+}
+@media only screen and (max-width: 480px) {
+     p.small  {
+            font-size: 50% !important;
+    }
+    .logo48 {
+        height: 32px;
+        width: 32px;
+    }
+    #logo svg {
+        height: 64px;
+        width: 64px;
+    }
+    #logo h1 {
+        font-size: 3rem;
+    }
+    #logo + p {
+        font-size: .75rem;
+        margin-top: -1rem;
+    }
+    #about img {
+        margin-left: .1rem;
+    }
+    .card {
+        width: 18rem;
+    }
+    #etsy-btn {
+        width:15.4rem;
+        height:4rem;
+        padding: 1rem !important;
+    }
+    #etsy-btn h3 {
+        line-height: 1.75;
+        font-size: 1.2rem;
+    }
+}
